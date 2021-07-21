@@ -1,6 +1,7 @@
 > **Warning :warning:**
 >
-> This repository is deprecated. Please use **[strapi/strapi-starter-gatsby-blog](https://github.com/strapi/strapi-starter-gatsby-blog)** instead.
+> This repository is deprecated. The Strapi Org no longer maintains it. You can still use it, but bear in mind, that you'll probably need to update the dependencies.
+>  Please use **[strapi/strapi-starter-gatsby-blog](https://github.com/strapi/strapi-starter-gatsby-blog)** instead.
 
 # Strapi Starter Gatsby Blog
 
