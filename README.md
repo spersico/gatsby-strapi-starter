@@ -33,7 +33,7 @@ Once you have created these accounts you can deploy your instance by clicking on
 
 Once you have created your account, add the url of your Heroku instance  (without the trailing slash) as a parameter to the following url.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/strapi/strapi-starter-gatsby-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/spersico/strapi-legacy-gatsby-blog-template)
 
 - Visit this url to deploy your application
 
