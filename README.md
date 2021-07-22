@@ -11,16 +11,9 @@ This starter is actually the result of this [tutorial](https://strapi.io/blog/bu
 
 ![screenshot image](/screenshot.png)
 
-## Backend
+## Backend (Start from here!)
 
-To deploy the Strapi instance you'll need:
-
-- [An Heroku account](https://signup.heroku.com/) for free
-- [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
-
-Once you have created these accounts you can deploy your instance by clicking on this button
-
-[Here](https://github.com/spersico/strapi-heroku-starter) is the repository of the backend of this starter
+[Here](https://github.com/spersico/strapi-heroku-starter) is the repository of the backend of this starter. Build this one first (Really. You'll thank me later)
 
 ## Frontend
 
