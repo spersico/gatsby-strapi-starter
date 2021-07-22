@@ -1,3 +1,21 @@
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias:{
+        path: require.resolve("path-browserify")
+      },
+      fallback: {
+        fs: false,
+        process: false,
+      },
+    },
+    plugins: [
+      plugins.provide({ process: 'process/browser' })
+    ]
+    
+  })
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(
@@ -29,23 +47,19 @@ exports.createPages = async ({ graphql, actions }) => {
   const articles = result.data.articles.edges
   const categories = result.data.categories.edges
 
-  articles.forEach((article, index) => {
+  articles.forEach(({ node: { strapiId: id } }, index) => {
     createPage({
-      path: `/article/${article.node.strapiId}`,
+      path: `/article/${id}`,
       component: require.resolve("./src/templates/article.js"),
-      context: {
-        id: article.node.strapiId,
-      },
+      context: { id },
     })
   })
 
-  categories.forEach((category, index) => {
+  categories.forEach(({ node: { strapiId: id } }, index) => {
     createPage({
-      path: `/category/${category.node.strapiId}`,
+      path: `/category/${id}`,
       component: require.resolve("./src/templates/category.js"),
-      context: {
-        id: category.node.strapiId,
-      },
+      context: { id },
     })
   })
 }
