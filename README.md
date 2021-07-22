@@ -1,6 +1,6 @@
 > **Warning :warning:**
 >
-> The original repository is deprecated. Strapi no longer maintains a Heroku-deployable Strapi-Gatsby integration oficially. Feel free to contribute or fork it. 
+> The original repository was deprecated. Strapi no longer maintains a Heroku-deployable Strapi-Gatsby integration oficially. Feel free to contribute or fork it. 
 > The original doesn't work anymore, so use this one or use **[strapi/strapi-starter-gatsby-blog](https://github.com/strapi/strapi-starter-gatsby-blog)** instead.
 
 # Gatsby-Strapi Starter Blog
