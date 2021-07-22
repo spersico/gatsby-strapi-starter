@@ -1,6 +1,7 @@
 > **Warning :warning:**
 >
-> This repository is deprecated. The Strapi Org no longer maintains it. You can still use it, but bear in mind, that you'll probably need to update the dependencies, or use **[strapi/strapi-starter-gatsby-blog](https://github.com/strapi/strapi-starter-gatsby-blog)** instead.
+> This repository is deprecated. Strapi no longer maintains it. 
+> You can still use it, but bear in mind, that you'll probably need to update the dependencies, or use **[strapi/strapi-starter-gatsby-blog](https://github.com/strapi/strapi-starter-gatsby-blog)** instead.
 
 # Strapi Starter Gatsby Blog
 
@@ -12,7 +13,7 @@ You may want to know how to develop such a starter by your own! This starter is 
 
 ![screenshot image](/screenshot.png)
 
-### Deploy the backend
+### Backend
 
 To deploy the Strapi instance you'll need:
 
@@ -21,50 +22,25 @@ To deploy the Strapi instance you'll need:
 
 Once you have created these accounts you can deploy your instance by clicking on this button
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-blog)
+[Here](https://github.com/spersico/strapi-heroku-starter) is the repository of the backend of this starter
 
-[Here](https://github.com/strapi/strapi-starter-blog) is the repository of the backend of this starter
-
-### Deploy the frontend
+### Frontend
 
 **On Netflify**
 
 - [A Netilfy account](https://app.netlify.com/signup) for free
 
-Once you have created your account, add the url of your Heroku instance  (without the trailing slash) as a parameter to the following url.
+Once you have created your account, add the url of your Heroku instance (without the trailing slash) as a parameter to the following url.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/spersico/strapi-legacy-gatsby-blog-template)
-
-- Visit this url to deploy your application
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/spersico/gatsby-strapi-starter)
 
 **On Vercel**
 
 Coming soon...
 
-**On Gatsby Cloud**
+### Extra (untested)
 
-You may want to deploy this starter frontend on [Gatsby Cloud](https://www.gatsbyjs.com/dashboard) in order to try the Gatsby Preview maybe!
-
-- Fork this starter on your own Github account
-- Create a new site by choosing the option "I already have a Gatsby site"
-
-![Create a New site](/medias/create-a-new-site.png)
-
-You'll be asked to select the repository you want to use
-
-- Select your new Strapi Starter Gatsby Blog repository you just forked and specify the Gatsby project folder which is `frontend` in this starter
-
-![Repository](/medias/repository.png)
-
-- You can then copy the webhook url and skip this step
-
-![Skip step](/medias/skip.png)
-
-- Paste your Strapi `API_URL` for both of your `Builds Environment variables` and `Preview Environment variables` (we consider that you deployed your strapi server)
-
-![Env](/medias/env.png)
-
-Now you'll need to create a Webhook on your strapi server in order to tell Gatsby cloud to build your Gatsby project each time your create/update/delete content
+Now you'll need to create a Webhook on your strapi server in order to build your Gatsby project each time your create/update/delete content
 
 - Open your Strapi admin panel and go to `/admin/settings/webhooks`
 - Create a new Webhook with following properties:
@@ -73,14 +49,6 @@ Now you'll need to create a Webhook on your strapi server in order to tell Gatsb
   - Check every Events for `Entry` and `Media`
 
 That's it! Now Strapi will inform Gatsby Cloud to build your Gatsby project everytime you create/update/delete content
-
-### Features
-
-- 2 Content types: Article, Category
-- 2 Created articles
-- 3 Created categories
-- Permissions set to `true` for article and category
-- Responsive design using UIkit
 
 ### Pages
 
@@ -92,23 +60,18 @@ That's it! Now Strapi will inform Gatsby Cloud to build your Gatsby project ever
 
 **Backend**
 
-See full instructions [here](https://github.com/strapi/strapi-starter-blog)
+See full instructions [here](https://github.com/spersico/strapi-heroku-starter)
 
 **Frontend**
 
 ```bash
-git clone https://github.com/strapi/strapi-starter-gatsby-blog.git
-cd strapi-starter-gatsby-blog
+git clone https://github.com/spersico/gatsby-strapi-starter.git strapi
+cd strapi
 ```
 
 #### Start the frontend server
 
 ```bash
-# Using yarn
-yarn install
-yarn develop
-
-# Using npm
 npm install
 npm run develop
 ```
