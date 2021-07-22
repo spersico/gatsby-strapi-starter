@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import ReactMarkdown from "react-markdown"
-import Moment from "react-moment"
 
 import Layout from "../components/layout"
 
@@ -12,7 +11,7 @@ export const query = graphql`
       strapiId
       title
       content
-      published_at
+      created_at
       image {
         publicURL
       }
@@ -37,9 +36,14 @@ const Article = ({ data }) => {
 
         <div className="uk-section">
           <div className="uk-container uk-container-small">
-            <ReactMarkdown source={article.content} />
+            <ReactMarkdown children={article.content} />
             <p>
-              <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+              {new Date(article?.created_at).toLocaleDateString([], {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}{" "}
             </p>
           </div>
         </div>
