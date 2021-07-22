@@ -26,17 +26,18 @@ Once you have created these accounts you can deploy your instance by clicking on
 
 ### Frontend
 
+When creating, you need to add the url of your Heroku instance (without the trailing slash) as a parameter to the following url.
+
+#### *So I Really recomend you to deploy the backend first*
+
+
 **On Netflify**
-
-- [A Netilfy account](https://app.netlify.com/signup) for free
-
-Once you have created your account, add the url of your Heroku instance (without the trailing slash) as a parameter to the following url.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/spersico/gatsby-strapi-starter)
 
 **On Vercel**
 
-Coming soon...
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fspersico%2Fgatsby-strapi-starter&env=API_URL&envDescription=Put%20your%20Strapi%20URL%20without%20the%20trailing%20slash%20(e.g.%20https%3A%2F%2Fyourapp.herokuapp.com)&project-name=gatsby&repo-name=gatsby-blog&demo-title=Gatsby%20Blog%20with%20Strapi&demo-description=A%20statically%20generated%20blog%20using%20Gatsby%20and%20Strapi&demo-image=https%3A%2F%2Fi.imgur.com%2F3ihGdLe.png)
 
 ### Extra (untested)
 
